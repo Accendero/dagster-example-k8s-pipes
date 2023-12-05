@@ -1,4 +1,4 @@
-# dagster-k8s-pipes
+# dagster-example-k8s-pipes
 
 This example illustrates how to use Dagster to launch a containerized script using the `dagster_k8s.k8s_pipes_client`.
 
@@ -55,6 +55,10 @@ minikube.
      ```bash
     docker compose up -d
     ```
+
+1. Navigate to the [minio console](http://localhost:9001), login with `minio`/`minio123` for username and password.
+   Create a bucket called `dagster`. Then create a prefix called `example-run-id` and upload the file
+   called `test-file.txt` to the prefix.
 
 1. Navigate to the [dagster webserver UI](http://localhost:3000) and launch a job
 
