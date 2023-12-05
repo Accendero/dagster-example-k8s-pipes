@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dagster-k8s-pipes"
+version = "0.1.0"
+description = ""
+authors = ["Andy Honeycutt <ahoneycutt@accendero.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dagster = "^1.5.10"
+dagster-webserver = "^1.5.10"
+dagster-k8s = "^0.21.10"
+click = "^8.1.7"
+boto3 = "^1.33.7"
+urllib3 = "1.26.15"
+requests-toolbelt = "0.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
